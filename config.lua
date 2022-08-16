@@ -16,6 +16,10 @@ ConsumeablesEat = {
     ["tosti"] = math.random(40, 50),
     ["twerks_candy"] = math.random(35, 54),
     ["snikkel_candy"] = math.random(40, 50),
+	["bacalhaucozido"] = math.random(35, 50),
+	["cavalacozida"] = math.random(35, 50),
+	["salmaocozido"] = math.random(35, 50),
+	["sardinhacozida"] = math.random(35, 50),
 }
 
 ConsumeablesDrink = {
