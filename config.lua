@@ -20,12 +20,22 @@ ConsumeablesEat = {
 	["cavalacozida"] = math.random(35, 50),
 	["salmaocozido"] = math.random(35, 50),
 	["sardinhacozida"] = math.random(35, 50),
+	["batatas"] = math.random(35, 50),
+	    ["tomates"] = math.random(35, 50),
+	    ["macas"] = math.random(35, 50),
+	    ["morangos"] = math.random(35, 50),
+	    ["laranjas"] = math.random(35, 50),
 }
 
 ConsumeablesDrink = {
     ["water_bottle"] = math.random(35, 54),
     ["kurkakola"] = math.random(35, 54),
     ["coffee"] = math.random(40, 50),
+	["sumodemaca"] = math.random(25, 45),
+    	["sumodemorango"] = math.random(25, 45),
+    	["sumodelaranja"] = math.random(10, 15),
+    	["sumodelaranjaemorango"] = math.random(10, 15),
+    	["leite"] = math.random(10, 15),
 }
 
 ConsumeablesAlcohol = {
