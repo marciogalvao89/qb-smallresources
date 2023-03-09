@@ -89,11 +89,7 @@ Config.DamageNeeded = 100.0 -- vehiclepush 0-1000
 Config.EnableProne = false -- prone isnt recomended at this time
 Config.MapText = "Cidade 2Life" -- This is the name / text shown above the map
 
-Config.Disable = {
-    disableHudComponents = {1, 2, 3, 4, 7, 9, 13, 14, 19, 20, 21, 22}, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
-    disableControls = {37}, -- Controls: https://docs.fivem.net/docs/game-references/controls/
-    displayAmmo = true -- false disables ammo display
-}
+
 
 Config.ConsumablesEat = {
 
@@ -250,7 +246,7 @@ Config.BlacklistedVehs = {
     [`rrocket`] = true,
     [`ruiner2`] = true,
     [`deluxo`] = true,
-    [`cargoplane2`] = true,
+    [`voltic2`] = true,
 }
 
 Config.BlacklistedPeds = { -- these NPCs will delete themslves on spawn
@@ -263,6 +259,20 @@ Config.BlacklistedPeds = { -- these NPCs will delete themslves on spawn
     [`s_m_y_blackops_02`] = true,
     [`a_c_mtlion`] = true,
     
+}
+
+Config.HolsterVariant = {130,122,3,6,8}
+Config.HolsterableWeapons = {
+    --'WEAPON_STUNGUN',
+    'WEAPON_PISTOL',
+    'WEAPON_PISTOL_MK2',
+    'WEAPON_COMBATPISTOL',
+    'WEAPON_APPISTOL',
+    'WEAPON_PISTOL50',
+    'WEAPON_REVOLVER',
+    'WEAPON_SNSPISTOL',
+    'WEAPON_HEAVYPISTOL',
+    'WEAPON_VINTAGEPISTOL'
 }
 
 Config.HolsterVariant = {130,122,3,6,8}
@@ -353,6 +363,7 @@ Config.Teleports = {
         --     ["AllowVehicle"] = false,
         --     label = 'be sure to label all sections if more than 2'
         -- },
+
     },
     --Coke Processing Enter/Exit
     [3] = {
