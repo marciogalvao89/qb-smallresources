@@ -24,7 +24,7 @@ local Translations = {
     consumables = {
         eat_progress = "Comendo..",
         drink_progress = "Bebendo..",
-        liqour_progress = "Beber licor..",
+        liqour_progress = "A Beber..",
         coke_progress = "cheirar rápido..",
         crack_progress = "fumar crack..",
         ecstasy_progress = "Pops Pills",
@@ -45,6 +45,7 @@ local Translations = {
         unavailable = "Cruise control indisponível",
         activated = "Cruise Activado: ",
         deactivated = "Cruise Desactivado",
+	},
     text = {
         ["car_wash_text"] = "~g~E~w~ - Lavar Veículo (%{price}€)",
         ["car_wash_not_available"] = "A estação de lavagem não está disponível...",

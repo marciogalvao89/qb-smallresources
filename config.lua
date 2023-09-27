@@ -89,6 +89,11 @@ Config.DamageNeeded = 100.0 -- vehiclepush 0-1000
 Config.EnableProne = false -- prone isnt recomended at this time
 Config.MapText = "Cidade 2Life" -- This is the name / text shown above the map
 
+Config.Disable = {
+    disableHudComponents = {1, 2, 3, 4, 7, 9, 13, 14, 19, 20, 21, 22}, -- Hud Components: https://docs.fivem.net/natives/?_0x6806C51AD12B83B8
+    disableControls = {37}, -- Controls: https://docs.fivem.net/docs/game-references/controls/
+    displayAmmo = true -- false disables ammo display
+}
 
 
 Config.ConsumablesEat = {
@@ -136,12 +141,25 @@ Config.ConsumablesDrink = {
 	["burgershot_colab"] = math.random(40, 50),
     ["burgershot_colas"] = math.random(20, 30),
     ["burgershot_coffee"] = math.random(10, 20),
+    ["v-class"] = math.random(30, 40),
 }
 
 Config.ConsumablesAlcohol = {
     ["whiskey"] = math.random(20, 30),
     ["beer"] = math.random(30, 40),
     ["vodka"] = math.random(20, 40),
+    ["v-hulk"] = math.random(30, 40),
+    ["v-dancerz"] = math.random(30, 40),
+    ["v-unicorn"] = math.random(30, 40),
+    ["v-sparkles"] = math.random(30, 40),
+    ["v-oldfashioned"] = math.random(30, 40),
+    ["v-margarita"] = math.random(30, 40),
+    ["v-manhattan"] = math.random(30, 40),
+    ["v-espressomartini"] = math.random(30, 40),
+    ["shot-absinthe"] = math.random(30, 40),
+    ["shot-redsnapper"] = math.random(30, 40),
+    ["shot-snakebite"] = math.random(30, 40),
+    ["shot-fireball"] = math.random(30, 40),
 }
 
 -- Custom Consumables hand bones
@@ -386,6 +404,28 @@ Config.Teleports = {
             },
             ["AllowVehicle"] = false,
             label = '[E] Leave'
+        },
+    },
+    [4] = {
+        [1] = {
+            ['poly'] = {
+                coords = vector3(-1385.23, -606.51, 30.32),
+                heading = 311.52,
+                length = 2,
+                width = 2
+            },
+            ["AllowVehicle"] = false,
+            label = "Entrar da Zona do Balcão"
+        },
+        [2] = {
+            ['poly'] = {
+                coords = vector3(-1371.48, -626.03, 30.82),
+                heading = 304.51,
+                length = 2,
+                width = 2
+            },
+            ["AllowVehicle"] = false,
+            label = "Sair na Zona do Balcão"
         }
     }
 }
