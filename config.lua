@@ -9,7 +9,13 @@ Config.AFK = {
         ['admin'] = true,
         ['god'] = true
     },
-    secondsUntilKick = 1500 -- AFK Kick Time Limit (in seconds)
+    secondsUntilKick = 1800, -- AFK Kick Time Limit (in seconds)
+    kickInCharMenu = false -- Set to true if you want to kick players for being AFK even when they are in the character menu.
+}
+
+Config.HandsUp = {
+    command = 'hu',
+    keybind = 'X',
 }
 
 Config.Binoculars = {
@@ -79,6 +85,8 @@ Config.Stun = {
     min = 4000,
     max = 7000
 }
+
+Config.RemovePistolWhipping = true  -- Removes Pistol Whipping
 
 Config.Cruise = 'mp/h'
 Config.IdleCamera = true
@@ -184,7 +192,7 @@ Config.ConsumablesCustom = {
     --     },
     --     ['replenish'] = {
     --         type = 'Hunger', -- replenish type 'Hunger'/'Thirst' / false
-    --         replenish = math.random(20, 40), 
+    --         replenish = math.random(20, 40),
     --         isAlcohol = false, -- if you want it to add alcohol count
     --         event = false, -- 'eventname' if you want it to trigger an outside event on use useful for drugs
     --         server = false -- if the event above is a server event
@@ -267,7 +275,12 @@ Config.BlacklistedVehs = {
     [`voltic2`] = true,
 }
 
-Config.BlacklistedPeds = { -- these NPCs will delete themslves on spawn
+
+Config.BlacklistedWeapons = {
+    [`WEAPON_RAILGUN`] = true,
+}
+
+Config.BlacklistedPeds = {
     [`s_m_y_ranger_01`] = true,
     [`s_m_y_sheriff_01`] = true,
     [`s_m_y_cop_01`] = true,
@@ -293,6 +306,7 @@ Config.HolsterableWeapons = {
     'WEAPON_VINTAGEPISTOL'
 }
 
+Config.DisableVestDrawable = false -- Set to TRUE to disable the vest equipped when using heavy armor.
 Config.HolsterVariant = {130,122,3,6,8}
 Config.HolsterableWeapons = {
     --'WEAPON_STUNGUN',
@@ -337,7 +351,7 @@ Config.Teleports = {
             ["AllowVehicle"] = false,
             label = false
         },
-        -- [3] = { 
+        -- [3] = {
         --     ['poly'] = {
         --         coords = vector3(0.0, 0.0, 0.0),
         --         heading = 0.0,

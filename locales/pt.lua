@@ -14,38 +14,16 @@ local Translations = {
         ["dont_have_enough_money"] = "Não tens dinheiro suficiente...",
         ["global_canceled"] = "Cancelado...",
     },
-    wash = {
-        in_progress = "O veículo está sendo lavado ..",
-        wash_vehicle = "[E] Lavar veículo",
-        wash_vehicle_target = "Lavar veículo",
-        dirty = "O veículo não está sujo",
-        cancel = "Lavagem cancelada ..",
+    info = {
+        ["cruise_activated_mp"] = "Cruise Ativado: %{speed} MP/H",
+        ["cruise_activated_km"] = "Cruise Ativado: %{speed} KM/H",
     },
-    consumables = {
-        eat_progress = "Comendo..",
-        drink_progress = "Bebendo..",
-        liqour_progress = "A Beber..",
-        coke_progress = "cheirar rápido..",
-        crack_progress = "fumar crack..",
-        ecstasy_progress = "Pops Pills",
-        healing_progress = "Curar",
-        meth_progress = "Fumar metanfetamina",
-        joint_progress = "Acenter uma Ganza..",
-        use_parachute_progress = "Colocando paraquedas..",
-        pack_parachute_progress = "Arrumar paraquedas..",
-        no_parachute = "voce nao tem paraquedas!",
-        armor_full = "Você já tem armadura suficiente!",
-        armor_empty = "Você não está vestindo um colete..",
-        armor_progress = "Colocando a armadura corporal..",
-        heavy_armor_progress = "Colocando a armadura corporal..",
-        remove_armor_progress = "Removendo a armadura corporal..",
-        canceled = "Cancelado..",
+    progress = {
+        ["car_wash_progress"] = "O veículo está a ser lavado...",
+        ["placing_firework"] = "A preparar fogo de artifício...",
+        ["attach_race_harness"] = "A colocar Arnês de Corrida",
+        ["remove_race_harness"] = "A remover Arnês de Corrida",
     },
-    cruise = {
-        unavailable = "Cruise control indisponível",
-        activated = "Cruise Activado: ",
-        deactivated = "Cruise Desactivado",
-	},
     text = {
         ["car_wash_text"] = "~g~E~w~ - Lavar Veículo (%{price}€)",
         ["car_wash_not_available"] = "A estação de lavagem não está disponível...",
@@ -53,31 +31,12 @@ local Translations = {
         ["push_vehicle"] = "[~g~SHIFT~w~] + [~g~E~w~] para empurrar veículo",
     },
     editor = {
-        started = "Started Recording!",
-        save = "Saved Recording!",
-        delete = "Deleted Recording!",
-        editor = "Later aligator!"
-    },
-    firework = {
-        place_progress = "Colocar objeto..",
-        canceled = "Cancelado..",
-        time_left = "Fogo de artifício acabou ~r~"
-    },
-    seatbelt = {
-        use_harness_progress = "Prendendo o Arnês de Corrida",
-        remove_harness_progress = "Removendo o arnês de corrida",
-        no_car = "Você não está em um carro."
-    },
-    teleport = {
-        teleport_default = 'Usar elevador'
-    },
-    pushcar = {
-        stop_push = "[E] Parar de Empurrar"
+        ["record"] = "Gravação Iniciada!",
+        ["save"] = "Gravação Guardada!",
+        ["delete_clip"] = "Gravação Apagada!",
+        ["editor"] = "Later aligator!",
     }
-
-
 }
-
 
 if GetConvar('qb_locale', 'en') == 'pt' then
     Lang = Locale:new({
@@ -86,4 +45,4 @@ if GetConvar('qb_locale', 'en') == 'pt' then
         fallbackLang = Lang,
     })
 end
-Lang = Locale:new({phrases = Translations, warnOnMissing = true})
+
